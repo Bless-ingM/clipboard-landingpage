@@ -1,0 +1,156 @@
+:root {
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayishBlue: hsl(210, 10%, 33%);
+    --grayishBlue: hsl(201, 11%, 66%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header{
+    background-image: url('./Images/bg-header-desktop.png');
+    color: var(--darkGrayishBlue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 20px;
+
+}
+img{
+    max-width: 100%;
+}
+p{
+    line-height: 1.5;
+    color: var(--grayishBlue);
+}
+
+.container{
+    padding: 0 20px;
+    margin: 80px auto;
+    width: 1200px;
+    max-width: 100%;
+}
+.container-small{
+    width: 700px;
+}
+section{
+    padding: 30px 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    flex-wrap: wrap;
+}
+.flex > *{
+    flex: 1;
+    padding: 10px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 0  50px;
+}
+.right p{
+    max-width: 500px;
+    text-align: left;
+    margin-top: -1px;
+ 
+}
+.right h3{
+    margin: 0;
+}
+.m4{
+    margin: 100px auto;
+}
+.btn{
+    padding:15px 28px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .8s ease;
+}
+.btn-green{
+    background:var(--strongCyan);
+    box-shadow: 0 2px var(--darkGrayishBlue);
+}
+.btn-blue{
+    background:var(--lightBlue);
+    box-shadow: 0 2px var(--darkGrayishBlue);
+}
+.btn:hover{
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, .7);
+
+}
+.btn:focus{
+    outline: none;
+}
+footer{
+    background: var(--grayishBlue);
+}
+footer img{
+    width: 60px;
+}
+footer ul{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+footer ul a {
+    color: var(--darkGrayishBlue);
+    text-decoration: none;
+}
+footer .container {
+    margin-bottom: 0;
+}
+
+footer .links{
+    flex: 3;
+}
+footer .links li{
+    margin-right: 40px;
+    padding: 10px;
+}
+
+footer .social li{
+    margin: 0 5px;
+}
+footer .social a{
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+@media (max-width:800px){
+    .flex{
+        flex-direction: column;
+    }
+    .footer .links{
+        flex-direction: column;
+    }
+    .footer .links li{
+        margin-right: 0;
+        padding: 10px;
+    }
+    .right{
+        align-items: center;
+    }
+}
